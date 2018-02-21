@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Charity Connect</title>
 
-    <!-- Bulma File -->
+    <!-- Bootstrap File -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -19,8 +19,7 @@
     <link href="/MyCharityConnection/volunteer.html" type="text/css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Cabin:400,500,600,bold" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    
+
 </head>
 
 <body>
@@ -36,22 +35,23 @@
                 <div class="navbar-brand">
                     <a class="navbar-pic" href="./index.html">
                         <img src="./assets/images/LogoCharity1.png" alt="Logo" style="
-                            height: 52px;
-                            margin-left: 12px;">
+                        height: 52px;">
                     </a>
                 </div>
                 <div id="navbarMenu" class="navbar-menu">
                     <div class="navbar-end">
-                        <a class="navbar-item" style="cursor:crosshair;font-size:20px;color:blue;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;"
-                            a href="./volunteer.html">
-                            <strong>VOLUNTEER</strong>
+
+                        <a class="chickens" style="cursor:crosshair;font-size:20px;color:blue;" a href="./index.html">
+                            <strong>HOME</strong>
 
                         </a>
-                        <a class="navbar-item" style="cursor:crosshair;font-size:20px;color:green;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;"
+
+                        <a class="chickens" style="cursor:crosshair;font-size:20px;color:green;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;"
                             a href="./donate.html">
                             <strong>DONATE</strong>
+
                         </a>
-                        <a class="navbar-item" style="cursor:crosshair;font-size:20px;color:orange;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;"
+                        <a class="chickens" style="cursor:crosshair;font-size:20px;color:orange;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;"
                             a href="./contactus.html">
                             <strong>CONTACT</strong>
 
@@ -70,9 +70,29 @@
         <div class="container">
             <div class="row">
                 <div class="foo">
-                    <h1>style= "font-family:Roboto;">My Charity Connection!</h1>
-
-
+                     <span class="letter" data-letter="m">M</span>
+                     <span class="letter" data-letter="y">y</span>
+                     <span class="letter" data-letter=""></span>
+                     <span class="letter" data-letter="c">C</span>
+                     <span class="letter" data-letter="h">h</span>
+                     <span class="letter" data-letter="a">a</span>
+                     <span class="letter" data-letter="r">r</span>
+                     <span class="letter" data-letter="i">i</span>
+                     <span class="letter" data-letter="t">t</span>
+                     <span class="letter" data-letter="y">y</span>
+                     <span class="letter" data-letter=""></span>
+                     <span class="letter" data-letter="c">C</span>
+                     <span class="letter" data-letter="o">o</span>
+                     <span class="letter" data-letter="n">n</span>
+                     <span class="letter" data-letter="n">n</span>
+                     <span class="letter" data-letter="e">e</span>
+                     <span class="letter" data-letter="c">c</span>
+                     <span class="letter" data-letter="t">t</span>
+                     <span class="letter" data-letter="i">i</span>
+                     <span class="letter" data-letter="o">o</span>
+                     <span class="letter" data-letter="n">n</span>
+                     <span class="letter" data-letter="!">!</span>
+ 
                 </div>
             </div>
             <div class="abouttext level-item">
@@ -86,7 +106,9 @@
             </div>
             <div class="columns">
                 <div class="column is-one-half">
-                            <button onclick="window.location.href='./donate.html'" class="image is-16by9 bttn-unite bttn-lg bttn-danger" style="margin-top: -400px;" id='donatebtn'><img src="./assets/images/donate.jpg">I want to Donate!</button>
+                        <figure class="image is-16by9">
+                            <img src="./assets/images/donate.jpg">
+                            <button onclick="window.location.href='./donate.html'" class="bttn-unite bttn-lg bttn-danger" style="margin-top: -400px;" id='donatebtn'>I want to Donate!</button>
                         </figure>
                     </div>
                     <div class="column is-one-half">
@@ -104,33 +126,44 @@
                 <div class="column is-one-third";>
                     <article class="" style="">
                         <p class="title">Location</p>
-                        <p>3481 Melrose Place  Beverly Hills, CA 90210
+                        <p>3481 Melrose Place
+                            <br>Beverly Hills, CA 90210
                         </p>
                     </article>
                 </div>
                 <div class="column is-one-third">
                     <article class="" style="">
                         <p class="title">Charity Connect</p>
-                        <p> Tim Hill, Roger McIntosh, Jessica Creiglow, Evan Voultepsis
+                        <p>Started by 4 nobody's who wanted to be somebody's to better connect people with philantropic causes
                         </p>
                     </article>
                 </div>
                 <div class="column is-one-third">
                     <article class="">
                         <p class="title">Around The Web</p>
-                        <div class="content">
+                         <div class="content">
+                            <ul class="web">
+                                <li>
                                     <a href="https://www.facebook.com" target="_blank" class="" style="font-size:36px">
-                                        <i class="fa fa-fw fa-facebook"></i>
+                                        <i id="alpha" class="fa fa-fw fa-facebook"></i>
                                     </a>
+                                </li>
+                                <li>
                                     <a href="https://www.twitter.com" target="_blank" class="" style="font-size:36px">
-                                        <i class="fa fa-fw fa-twitter"></i>
+                                        <i id="beta" class="fa fa-fw fa-twitter"></i>
                                     </a>
+                                </li>
+                                <li>
                                     <a href="https://www.linkedin.com" target="_blank" class="" style="font-size:36px">
-                                        <i class="fa fa-fw fa-linkedin"></i>
+                                        <i id="charlie" class="fa fa-fw fa-linkedin"></i>
                                     </a>
+                                </li>
+                                <li>
                                     <a href="https://www.instagram.com" target="_blank" class="" style="font-size:36px">
-                                        <i class="fa fa-fw fa-instagram"></i>
+                                        <i id="delta" class="fa fa-fw fa-instagram"></i>
                                     </a>
+                                </li>
+                            </ul>
                         </div>
                     </article>
                 </div>
